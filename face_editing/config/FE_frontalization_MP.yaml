@@ -1,0 +1,35 @@
+
+base_root : '/data1/mandi.luo/FaceRotation/cjcode-v2/main/'
+training_g_stride : 1
+
+goal : 'transfer'
+gan : 'lsgan'
+model : 'pose'
+dataset : 'Multi-PIE'
+use_perceptual_loss : true
+use_l1_loss : true
+l1_loss_weight : 50
+
+fine_tune : false
+train_model_path : ''
+train_model_epoch : 0
+
+image_size : 128
+batch_size : 48
+enhance_g_path : None
+enhance_d_path : None
+
+trans_g_num : 6
+trans_d_num : 4
+enhance_g_num : None
+enhance_d_num : None
+
+training_epoch : 200
+report_interval : 50
+display_number : 8
+
+learning_rate : 0.0002
+step1 : 50
+step2 : 100
+
+#label_nc:
